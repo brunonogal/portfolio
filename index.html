@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
   <style>
-    :root {
+:root {
   --bg: #eef2f6;
   --card-bg: #ffffff;
   --ink: #101a2b;
@@ -69,6 +69,20 @@ header.hero .eyebrow {
   padding: 6px 14px;
   border-radius: 999px;
   margin-bottom: 24px;
+  box-shadow: 0 0 0 0 rgba(42, 92, 154, 0.5);
+  animation: pulse-badge 1.8s ease-out infinite;
+}
+
+@keyframes pulse-badge {
+  0% {
+    box-shadow: 0 0 0 0 rgba(42, 92, 154, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(42, 92, 154, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(42, 92, 154, 0);
+  }
 }
 
 header.hero .eyebrow::before {
